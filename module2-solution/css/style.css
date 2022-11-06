@@ -1,0 +1,70 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 1.75em;
+  text-align: center;
+}
+
+.row {
+  width: 100%;
+}
+.row div {
+  position: relative;
+  float: left;
+  padding: 5px;
+  height: auto;
+}
+
+.box {
+  background-color: gray;
+  border: 3px black solid;
+}
+
+.section-title {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 2px black solid;
+  width: fit-content;
+  padding: 3px;
+  font: 1.25em;
+}
+
+.dummy {
+  margin-top: 30px;
+}
+
+#chicken {
+  background: salmon;
+}
+
+#beef {
+  background: indianred;
+  color: white;
+}
+
+#sushi {
+  background: lightgoldenrodyellow;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Desktop Version **********/
+@media (min-width: 992px){
+  .col-dt-4 {
+    width: 33.33%;
+  }
+}
+
+/********** Tablet Version **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-tb-6 {
+    width:  50%;
+  }
+}
