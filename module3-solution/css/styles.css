@@ -7,6 +7,7 @@ body {
 
 /** HEADER **/
 #header-nav {
+  position: relative;
   background-color: grey;
   border-radius: 0;
   border: 2px black solid;
@@ -16,12 +17,13 @@ body {
   padding-top: 25px;
 }
 
-.navbar-brand h1 { /* Restaurant name */
+.navbar-brand h1 {
+  position: absolute;
   font-size: 1.5em;
   font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 0;
   line-height: .75;
+  top: -5px;
+  left: 5px;
 }
 
 .navbar-brand a{
@@ -31,8 +33,13 @@ body {
   text-decoration: none;
 }
 
+#collapsable-nav {
+  padding: 0px;
+}
+
 #nav-list {
-  margin-top: 10px;
+  margin: 0px;
+  width: 100%;
 }
 #nav-list a {
   color: #000;
